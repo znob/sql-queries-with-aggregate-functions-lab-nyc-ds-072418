@@ -73,3 +73,7 @@ class TestAggregateFunctions(unittest.TestCase):
     def test_total_years_and_hr_per_team_ordered_by_hr(self):
         result = [('NY', 15, 659), ('BOS', 7, 55)]
         self.assertEqual(cursor.execute(total_years_and_hr_per_team_ordered_by_hr()).fetchall(), result)
+
+    def test_years_with_on_base_over_300(self):
+        result = [(1920, 322), (1921, 349), (1923, 375), (1924, 342), (1926, 328), (1927, 329), (1928, 310), (1930, 322), (1931, 327)]
+        self.assertEqual(cursor.execute(years_with_on_base_over_300()).fetchall(), result)
