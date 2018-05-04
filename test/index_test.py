@@ -1,4 +1,6 @@
 import unittest, sqlite3
+import sys
+sys.path.insert(0, '..')
 from select import *
 
 connection = sqlite3.connect('../babe_ruth.db')
