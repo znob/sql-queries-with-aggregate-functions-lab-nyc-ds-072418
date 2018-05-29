@@ -8,9 +8,6 @@ cursor = connection.cursor()
 
 class TestAggregateFunctions(unittest.TestCase):
 
-    file = open("../select.py", "r")
-    file.read()
-
     def test_total_seasons(self):
         result = [(22,)]
         self.assertEqual(cursor.execute(total_seasons()).fetchall(), result)

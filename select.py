@@ -1,4 +1,4 @@
-# Code your solutions below:
+# Add your queries to the strings below:
 
 def total_seasons():
     return ""
