@@ -1,9 +1,9 @@
 import unittest, sqlite3
 import sys
 sys.path.insert(0, '..')
-from select import *
+from selects import *
 
-connection = sqlite3.connect('../babe_ruth.db')
+connection = sqlite3.connect('./babe_ruth.db')
 cursor = connection.cursor()
 
 class TestAggregateFunctions(unittest.TestCase):
